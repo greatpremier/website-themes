@@ -1,5 +1,3 @@
-import './index.css';
-
 document.addEventListener('DOMContentLoaded', () => {
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
@@ -40,34 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
-
-            // --- JAVASCRIPT PLACEHOLDER FOR FORM SUBMISSION ---
-            // This is where you would typically send the form data to a server.
-            // Example:
-            /*
-            const formData = {
-                name: document.getElementById('form-name').value,
-                email: document.getElementById('form-email').value,
-                phone: document.getElementById('form-phone').value,
-                message: document.getElementById('form-message').value
-            };
-
-            fetch('/api/contact', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(formData)
-            })
-            .then(response => response.json())
-            .then(data => {
-                console.log('Success:', data);
-                alert('Message sent successfully!');
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
-            */
-            // --------------------------------------------------
-
             alert('Thank you! Your message has been sent. We will contact you shortly.');
             contactForm.reset();
         });
